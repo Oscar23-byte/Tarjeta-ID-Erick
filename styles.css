@@ -1,0 +1,160 @@
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f3f4f6;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+
+
+
+.card{
+    width:100%;
+    max-width:750px;
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.10);
+    display:flex;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 18px 40px rgba(0,0,0,.15);
+}
+
+
+
+.card-left-banner{
+    width:220px;
+    background:#4285f4;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+}
+
+.foto{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #fff;
+    background:#fff;
+}
+
+
+
+.card-content{
+    flex:1;
+    padding:30px;
+}
+
+h2{
+    font-size:26px;
+    color:#222;
+    margin-bottom:25px;
+    border-bottom:2px solid #eee;
+    padding-bottom:10px;
+}
+
+.info-grid{
+    display:flex;
+    gap:30px;
+}
+
+.seccion{
+    flex:1;
+}
+
+.seccion.contactos{
+    border-left:1px solid #ddd;
+    padding-left:25px;
+}
+
+h3{
+    color:#4285f4;
+    margin-bottom:15px;
+    font-size:16px;
+}
+
+.contacto-bloque{
+    margin-bottom:18px;
+}
+
+p{
+    font-size:14px;
+    color:#555;
+    line-height:1.6;
+    margin-bottom:5px;
+}
+
+strong{
+    color:#111;
+}
+
+
+
+@media (max-width:768px){
+
+    body{
+        padding:15px;
+        align-items:flex-start;
+    }
+
+    .card{
+        flex-direction:column;
+        max-width:420px;
+    }
+
+    .card-left-banner{
+        width:100%;
+        padding:25px;
+    }
+
+    .foto{
+        width:120px;
+        height:120px;
+    }
+
+    .card-content{
+        padding:20px;
+    }
+
+    h2{
+        text-align:center;
+        font-size:22px;
+    }
+
+    .info-grid{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .seccion.contactos{
+        border-left:none;
+        border-top:1px solid #ddd;
+        padding-left:0;
+        padding-top:20px;
+    }
+
+    h3{
+        text-align:center;
+    }
+
+    p{
+        font-size:15px;
+        word-break:break-word;
+    }
+}
